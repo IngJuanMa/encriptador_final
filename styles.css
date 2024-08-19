@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gupter:wght@400;500;700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    --color-1: #261D17;
+    --color-2: #F2F2F2;
+    --color-3: #B6B6B6;
+    --fuente-1:"Bebas Neue", sans-serif;
+    --fuente-2: "Slabo 27px", serif;
+    --fuente-3:"DM Sans", sans-serif;
+}
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box
+}
+
+
+.header{
+    display: flex;
+    gap: 20px;
+    padding: 1%;
+    align-items: center;
+    background-color: #e7e9f6;
+}
+    .imagen_header{
+        width: 5%; 
+        border-radius: 12px;
+        border: 2.2px dotted var(--color-1);
+    }
+    .header_botones{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .presentacion-botones{
+        display: flex;
+        font-family: var(--fuente-3);
+        font-size: 0.8rem;
+        border-radius: 15px;
+        padding:  10px 10px;
+        width: 220%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        text-decoration: none;
+        color: var(--color-1);
+        box-shadow: 0 2px 6px var(--color-1) ;
+    }
+    .presentacion-botones:hover{
+        background-color:#006666;
+        color: var(--color-2);
+        outline: 0.15rem solid var(--color-1);
+    }
+
+.organización_general{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-image: url(./assets/fondo_uno.jpg) ;
+    background-position: inherit;
+}
+    .contenido_uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 2%;
+    
+    }
+        .contenido_uno_titulo{
+            text-align: center;
+            font-weight: 600;
+            font-size: x-large;
+            padding-top: 1%;
+            font-family: var(--fuente-1);
+            font-weight: 800;
+        }
+
+        .contenido_uno_input{
+            color: #006666;
+            width: 90%;
+            height: 50%;
+            background-color: transparent 0.5%;
+            border-radius: 20px;
+            box-shadow: 0 3px 25px #006666 ;
+            align-items: center;
+            border: none;
+            outline: none;
+            font-family: var(--fuente-3);
+            text-align: center;
+            font-size: medium;
+            text-transform: lowercase;
+        }
+        ::placeholder{
+            color: #006666;
+            font-family: var(--fuente-1);
+            text-align: center;
+            font-size: medium;
+            font-family: var(--fuente-3);
+        }
+
+        .texto_uno{
+            display: flex;
+            gap: 8px;
+            text-align: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 0.9rem;
+            font-family: var(--fuente-2);
+            width: 80%;
+            text-align: left;
+        }
+
+        .organizacion_botones{
+            display: flex;
+            gap: 20px;
+            width: 80%;
+            height: 15%;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+        }
+
+        .botones{
+            font-family: var(--fuente-1);
+            width: 50%;
+            height: 90%;
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: medium;
+            font-weight: 500;
+            box-shadow: 0 2px 6px #006666 ;
+            border: none;
+            cursor: pointer;
+        }
+        .botones_encrip{
+            font-family: var(--fuente-1);
+            background-color: #006666;
+            color: var(--color-2);
+            width: 50%;
+            height: 90%;
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: medium;
+            font-weight: 500;
+            box-shadow: 0 2px 6px #006666;
+            border: none;
+            cursor: pointer;
+        }
+        .botones:hover{
+            background-color: #006666;
+            color: var(--color-2);
+            outline: 0.3rem solid var(--color-1) ;
+        }
+        .botones_encrip:hover{
+            background-color: var(--color-2);
+            color:var(--color-1);
+            outline: 0.3rem solid #006666;
+        }
+
+    .contenido_dos{
+        border: 1px solid var(--color-1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        justify-content: center;
+        align-items: center;
+        gap: 4%;   
+        box-shadow: 0px 5px 25px var(--color-1) ;
+        border-radius: 12px;
+        border: none;
+        width: 35%;
+        
+    }
+
+        .imagen_detective{
+            max-width: 80%;
+            max-height: 50%;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 1px 3px 2px #006666  ;
+            background-color: #006666;
+        }
+        .imagen_detective_dos{
+            max-width: 80%;
+            max-height: 50%;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 1px 3px 2px #006666  ;
+            background-color: #006666;
+            display: none;  
+        }
+
+        .contenido_dos_textos{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border-radius: 15px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 4%;
+            background-color: var(--color-2);
+            box-shadow: 0 3px 10px #006666;
+        }
+
+        .texto_dos{
+            color: var(--color-1);
+            font-family: var(--fuente-1);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .texto_tres{
+            font-family: var(--fuente-1);
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            resize: none;
+        }
+        .boton_copiar{
+            font-family: var(--fuente-1);
+            background-color: #006666;
+            color: var(--color-2);
+            width: 80%;
+            height: 30px;
+            border-radius: 15px;
+            font-size: small;
+            font-weight: 500;
+            box-shadow: 0 2px 6px #006666;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            display: none;
+        }
+        .boton_copiar:hover{
+            background-color: var(--color-2);
+            color:var(--color-1);
+            outline: 0.15rem dotted #006666;
+        }
+        .boton_copiar2{
+            font-family: var(--fuente-1);
+            background-color: var(--color-3);
+            color: var(--color-2);
+            width: 80%;
+            height: 30px;
+            border-radius: 15px;
+            font-size: small;
+            font-weight: 500;
+            box-shadow: 0 2px 6px #006666;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            display: none;
+        }
+        .boton_copiar2:hover{
+            background-color: var(--color-2);
+            color:var(--color-1);
+            outline: 0.15rem dotted #006666;
+        }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #c9daf2;
+}
+
+    .texto_footer{
+        font-family:var(--fuente-1);
+        font-weight:100 ;
+        font-size: medium;
+    }
+
+@media (max-width: 1200px){
+    .header{
+        justify-content: center;
+        padding: 2%;
+    }
+}
+@media (max-width: 420px){
+    .header{
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .imagen_header{
+        width: 10%;
+    
+    }
+    .header_botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+        width: 90%;
+        padding: 0%;
+    }
+    .presentacion-botones{
+        font-size: 0.5rem;
+        width: 220%;
+       gap: 10%;
+    }
+    .imagen_header_boton{
+        width: 30%;
+        display: inline;
+    }
+    .organización_general{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 8%;
+        background-position: 50% 50%;
+    }
+    .contenido_uno{
+        width: 80%;
+        height: auto;
+        gap: 15px;
+    }
+    .contenido_uno_input{
+        height: 200px;
+        width: 100%;
+    }
+    .texto_uno{
+        font-size: 0.6rem;
+        text-align: center;
+        font-weight: 600;
+    }
+    .imagen_text{
+        width: 5%;
+        height: 5%;
+    }
+    .botones{
+        width: 50%;
+        height: 50px;
+        gap: 5px;
+        font-size: smaller;
+    }
+    .botones_encrip{
+        width: 50%;
+        height: 50px;
+        gap: 5px; 
+        font-size: smaller;
+    }
+    .contenido_dos{
+        gap: 10%;
+        flex-direction: row;
+        width: 80%;
+        height: 220px; 
+        padding: 5%; 
+    }
+    .imagen_detective{
+        width: 40%;
+        padding-left: 1%;
+    }
+    .contenido_dos_textos{
+        height: 150px;
+        width: 80%;
+        gap: 15px;
+    }
+    .texto_dos{
+        font-size: smaller;
+    }
+    .texto_tres{
+        font-size: smaller;
+    }
+}
+    

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img  class="imagen_header" src="./assets/logo.png"> 
+        <div class="header_botones">
+            
+            <a class="presentacion-botones" href="https://www.instagram.com/manuel.280/">
+                <img src="./assets/Instagram.png" class="imagen_header_boton"  >Instagram</a>
+            <a class="presentacion-botones" href="https://github.com/IngJuanMa"> 
+                <img src="./assets/Git.png" class="imagen_header_boton">GitHub</a>
+            <a class="presentacion-botones" href="www.linkedin.com/in/juan-manuel-castro-chavarro-9b0128262"> 
+                <img src="./assets/linke.png" class="imagen_header_boton">Linkedln</a>
+        </div>
+    </header>
+
+    <main class="organización_general">
+        <section class="contenido_uno">
+            <h1 class="contenido_uno_titulo">Bienvenido al desencriptador de texto</h1>
+            
+            <input type="text" id="input_texto" class="contenido_uno_input" placeholder="Ingrese su texto aquí" >
+        
+            <p class="texto_uno"> <img  src="./assets/infouno.png" class="imagen_text">Ingrese solamente letras minúsculas y no utilice caracteres especiales</p>
+                <div class="organizacion_botones">
+                    <button class="botones_encrip" onclick="encriptar()"> <img src="./assets/cofre.png" >Encriptar</button>
+                    <button class="botones" onclick="desencriptar()" > <img src="./assets/llave.png">Desencripar</button>
+                </div>
+        </section>
+
+        <section class="contenido_dos">
+            <img class="imagen_detective" id="detective" src="./assets/detec.png">
+            <img class="imagen_detective_dos" id="detective_dos"  src="./assets/Detective_tres.png">
+            <div class="contenido_dos_textos">
+                <h2 class="texto_dos" id="texto_titulo" >No se ha detectado ningún texto </h2>
+                <textarea class="texto_tres" id="texto_encriptado" disabled >Ingresa el texto que deseas encriptar o desencriptar </textarea>
+                <button class="boton_copiar" id="boton_copiar" onclick="copiar()" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2  class="texto_footer" >Desarrollado por Juan Manuel</h2>
+        
+    </footer>
+</body>
+</html>
